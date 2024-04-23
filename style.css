@@ -1,0 +1,137 @@
+*{
+			margin: 0;
+			padding: 0;
+		}
+		.navbar{
+			width: 100vw;
+			height: 10vh;
+			display: flex;
+			z-index: 2;
+			background: #141c1b;
+		}
+
+		h1{
+			width: 30vw;
+			font-family: sans-serif;
+			margin-top: 1rem;
+			margin-left: 2rem;
+
+		}
+
+		a{
+			text-decoration: none;
+		}
+
+		ul{
+			width: 70vw;
+			display: flex;
+			list-style: none;
+			font-family: sans-serif;
+		}
+
+		li{
+			margin: 1.4rem 4rem 0rem 4rem;
+			font-weight: bold;
+			font-size: 1.2rem;
+		}
+
+		.middle_content{
+			height: 80vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		p{
+			font-size: 1.5rem;
+		}
+
+		input{
+			padding: 0.5rem 2rem 0.5rem 2rem;
+			margin: 1rem;
+		}
+
+		label{
+			font-size: 1.5rem;
+			font-family: sans-serif;
+		}
+
+		.blog_contents div{
+				border-right: 2px solid black;
+			}
+
+			.blog_contents h1{
+				text-decoration: underline;
+			}
+
+		#change::after{
+			content: "";
+			position: absolute;
+			background: white;
+			width: 23vw;
+			height: 6vh;
+			left: 42rem;
+			border-left: 2px solid black;
+			z-index: 0;
+			animation:change 5s 1s infinite steps(10);
+		}
+
+		@keyframes change{
+			0%{
+				left: 21rem;
+			}
+		}
+
+		@media only screen and (max-width: 914px){
+			.navbar{
+				flex-direction: column;
+				align-items: center;
+				height: 42vh;
+			}
+
+			.navbar ul{
+				flex-direction: column;
+				align-items: center;
+			}
+
+			#about{
+				flex-direction: column-reverse;
+				align-items: center;
+			}
+
+			.Services{
+				flex-direction: column-reverse !important;
+				align-items: center;
+			}
+
+			span{
+				display: none;
+			}
+
+			.middle_content{
+				flex-direction: column;
+			}
+
+			.Services p, #about p{
+				height: 50vh;
+				overflow: auto;
+				text-overflow: ellipsis;
+				letter-spacing: 0.2px;
+				word-spacing: 2px;
+			}
+
+			.blog_contents{
+				grid-template-columns: repeat(1, 1fr) !important;
+				background: #202124;
+				color: white;
+				font-family: sans-serif;
+			}
+
+			.blog_contents div{
+				border-bottom: 2px solid black;
+			}
+
+			.blog_contents h1{
+				text-decoration: underline;
+			}
+		}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Blogs</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="navbar" style="position: sticky; top: 0; color: white;">
+		<h1 style="margin-top: 0.8rem;">Shreesant</h1>
+		<ul>
+			<li><a href="./index.html">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</div>
+
+	<label>search:</label><input type="text" name="search" style="border: 2px solid black;" id="search"><button onclick="searchTxt()" style="padding: 0.5rem 1.4rem 0.5rem 1.4rem; font-size: 1.2rem; border-radius: 1.5rem;">search</button>
+
+	<div class="blog_contents" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; position: relative; top: 5rem;">
+		<div class="javascript" id="blg_item">
+			<h1>JavaScript</h1>
+			<p id="api_content">
+				JavaScript is the one of the most popular programming language to write the code for 
+				front end as well as back-end. Every developers use javascript to build their websites because 
+				Javascript is must to add functionalities in the webpage.JavaScript is popular because of its frameworks also . There are many JavaScript frameworks available to make the developers work much easier and faster. React is one of the most popular javascript framework ever.
+
+				The most common way to use JavaScript is by linking JavaScript file to the HTML file 
+				through script element.
+				syntax:
+				<pre>
+					<script src=""></script>
+				</pre>
+			</p>
+		</div>
+		<div class="python" id="blg_item">
+			<h1>Python</h1>
+			<p id="api_content">
+				Python is the most popular modern programming Language used to write programs
+				for variety of applications like web apps, mobile apps etc. 
+				There are few reasons for its popularity:
+				1) It has very simple syntax.
+				2) In python programming thery are many libraries for web apps.
+				3) There are few libraries for data analyzing like pandas, numpy. and matplotlib for data visualization.
+			</p>
+		</div>
+		<div class="C" id="blg_item">
+			<h1>C Language</h1>
+			<p id="api_content">
+				C Language is the programming language that is used to write programs. C Language is the first programming language for most of the programmers. It has most flexible features for numeric applications.
+			</p>
+		</div>
+		<div id="blg_item">
+			<h1>CSS</h1>
+			<p>CSS Stands for cascading style sheets. It is used to design the webpage. Some of the properties like background-color, background-image, color, font-size etc. comes inside CSS.</p>
+		</div>
+		<div id="blg_item">
+			<h1>HTML</h1>
+			<p>HTML stands for hyper text markup language.It gives the structure to the webpage. There are a lot of tags in HTML and diffrent tags are used for different purposes. There is a video tag that is used to embed videos , img tag that is used to embed image, audio tag used to embed audio etc. </p>
+		</div>
+		
+	</div>
+	<footer style="margin-top: 20rem; background: #202124; color: white;">
+			<ul style=" width:100vw; display: flex; flex-direction: column; align-items: center;">
+				<li><i class="fa-brands fa-facebook" style="margin-right: 1rem;"></i>facebook: <a href="https://www.facebook.com/adhikari.shrisant/">facebook.com/shreesant-adhikari</a></li>
+				<li><i class="fa-brands fa-instagram" style="margin-right: 1rem;"></i>Instagram: <a href="https://www.instagram.com/shreesant_adhikari/">instagram.com/codewithshreesant</a></li>
+				<li> <i class="fa-brands fa-linkedin" style="margin-right:1rem;"></i>Linkedin: <a href="https://www.linkedin.com/in/shreesant-adhikari-bb667322b?originalSubdomain=np">linkedin.com/in/shreesant-adhikari</a></li>
+				<li><i class="fa-solid fa-envelope" style="margin-right:1rem;"></i>email: shreesantadhikari4590@gmail.com</li>
+			</ul>
+	</footer>
+
+</body>
+<script src="index.js"></script>
+</html>
